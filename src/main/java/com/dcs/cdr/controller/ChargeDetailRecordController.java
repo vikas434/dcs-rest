@@ -46,4 +46,5 @@ public class ChargeDetailRecordController {
         ChargeDetailRecord savedCdr = cdrService.createChargeDetailRecord(cdr);
         return new ResponseEntity<>(savedCdr, HttpStatus.CREATED);
     }
+    //TODO write integration test for this class.
 }

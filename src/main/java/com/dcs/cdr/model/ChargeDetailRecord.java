@@ -3,19 +3,18 @@ package com.dcs.cdr.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
+import lombok.Setter;
+import lombok.Value;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "charge_detail_record")
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@EqualsAndHashCode
+@Data
+@Builder
 public class ChargeDetailRecord {
 
     @Id
@@ -37,5 +36,5 @@ public class ChargeDetailRecord {
     @NotNull(message = "Total cost cannot be null")
     @DecimalMin(value = "0.00", message = "Total cost must be greater than or equal to 0.00")
     //TODO need to check validation for 0.
-    private BigDecimal totalCost;
+    private Double totalCost;
 }
