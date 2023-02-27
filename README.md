@@ -1,6 +1,6 @@
 # Charge Detail Records (CDR) Management REST API
 
-This is a REST API for managing Charge Detail Records (CDR) in real time for a network of Charge Point Operators (CPO). The project is built using Java 1.8+ and the Spring Framework.
+This is a REST API for managing Charge Detail Records (CDR) in real time for a network of Charge Point Operators (CPO). The project is built using Java 17 and the Spring Framework.
 
 ## Features
 
@@ -19,7 +19,7 @@ This is a REST API for managing Charge Detail Records (CDR) in real time for a n
 
 ## Requirements
 
-- Java 1.8+
+- Java 1.17
 - Spring Framework
 - Maven or Gradle as a build tool
 
